@@ -16,6 +16,7 @@
     <form id="form1" runat="server">
         <div>
               <table >
+			  
                 <tr>
                     <td>   <asp:Label ID="Label0" runat="server" Text="Company Logo:"></asp:Label></td>
                     <td>  <asp:FileUpload ID="fpLogoImage" runat="server" Height="25px" Width="269px" />
@@ -32,7 +33,7 @@
                     <asp:Label ID="Label2" runat="server" Text="Company Address:"></asp:Label>
                     </td>
                     <td>
-                    <asp:TextBox ID="txtComAddress" runat="server" Height="22px" Width="206px"></asp:TextBox>
+                    <asp:TextBox ID="txtComAddress" runat="server" Height="22px" Width="206px" AutoCompleteType="HomeStreetAddress"></asp:TextBox>
                     </td></tr>
 
                 

@@ -10,33 +10,33 @@
 namespace Topstar {
     
     
-    public partial class AddProperties {
+    public partial class WebForm4 {
         
         /// <summary>
-        /// form1 control.
+        /// FileUploader control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.WebControls.FileUpload FileUploader;
         
         /// <summary>
-        /// Label1 control.
+        /// BtnUploadFile control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
+        protected global::System.Web.UI.WebControls.Button BtnUploadFile;
         
         /// <summary>
-        /// TextBox1 control.
+        /// DataGridView control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.GridView DataGridView;
     }
 }

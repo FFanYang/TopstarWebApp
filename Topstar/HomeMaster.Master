@@ -5,11 +5,17 @@
 <html>
 <head runat="server">
     <title></title>
+    <style>
+        .jumbotron
+        {
+            background-color: green;
+        }
+    </style>
    
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
+        <div class = "jumbotron">
              <table>
        <tr>
            <td> 
@@ -38,6 +44,7 @@
        </tr>
        <tr> 
            <td> 
+               <div class="navbar-header">
                <asp:DataList ID="DataList3" runat="server" DataSourceID="SqlDataSource5" RepeatDirection="Horizontal">
                    <ItemTemplate>
                        <asp:Button ID="Button1" runat="server" Height="26px" Text='<%# Eval("navName") %>' Width="146px" />
@@ -45,19 +52,20 @@
                        <br />
                    </ItemTemplate>
                </asp:DataList>
+                   </div>
+             
+
                <asp:SqlDataSource ID="SqlDataSource5" runat="server" ConnectionString="<%$ ConnectionStrings:dbtopstarConnectionString %>" SelectCommand="SELECT DISTINCT [navName] FROM [tbnavigation]"></asp:SqlDataSource>
                <asp:SqlDataSource ID="SqlDataSource4" runat="server" ConnectionString="<%$ ConnectionStrings:dbtopstarConnectionString %>" SelectCommand="SELECT DISTINCT [navName] FROM [tbPanel]"></asp:SqlDataSource>
                <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:dbtopstarConnectionString %>" SelectCommand="SELECT [navName] FROM [tbnavigation]"></asp:SqlDataSource>
            </td>
        </tr>
-       <tr> 
-           <td> 
-               slidehsow</td>
-       </tr>
+       
    </table>
+            </div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
-        </div>
+        
     </form>
 </body>
 </html>
